@@ -73,3 +73,69 @@ code {
   /* color: #b30b13; */
   /* background-color: aliceblue; */
 }
+
+.form {
+  display: grid;
+  width: 35%;
+  row-gap: 1rem;
+}
+
+.form>input {
+  height: 2rem;
+  border: 1px solid #a39f9f;
+  border-radius: 1rem;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: medium;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.form>input:focus {
+  border: 1px solid #a39f9f;
+  border-radius: 1rem;
+  background-color: #fdf3f3;
+  -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+  -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
+.submitBtn {
+  background-color: rgb(127, 204, 255);
+  height: max-content;
+  width: max-content;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  /* padding-bottom: 12px; */
+  align-self: center;
+  border: 2px solid rgb(127, 204, 255);
+  border-radius: 1rem;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.submitBtn:hover {
+  background-color: rgba(127, 204, 255, 0.7);
+  border-color: rgba(127, 204, 255, 0.7);
+  font-weight: 550;
+  -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+  -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+  /* font-size: 24px; */
+}
+
+.submitBtn:disabled {
+  background-color: rgba(127, 204, 255, 0.7);
+  border-color: rgba(127, 204, 255, 0.7);
+  /* font-weight: 550; */
+  cursor: not-allowed;
+  color: #696869;
+}
+
+.error-message {
+  color: #b30b13;
+  background-color: #ffb4b4;
+  font-size: small;
+  font-style: italic;
+  font-weight: 500;
+}
