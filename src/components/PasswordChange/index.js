@@ -2,7 +2,7 @@ import React from 'react'
 
 const PasswordChange = () => {
     return (
-        <div>
+        <div className="container">
             Password Change
         </div>
     )
