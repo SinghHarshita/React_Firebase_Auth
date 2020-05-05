@@ -17,7 +17,8 @@ class AdminPage extends Component {
 
     componentDidMount() {
         this.setState({ loading: true });
-     
+        
+        console.log("Why");
         this.props.firebase.users().on('value', snapshot => {
             const usersObject = snapshot.val();
  
@@ -25,6 +26,9 @@ class AdminPage extends Component {
                 ...usersObject[key],
                 uid: key,
             }));
+            
+            console.log("Gello");
+            console.log(usersList);
 
             this.setState({
                 users: usersList,
@@ -53,7 +57,7 @@ class AdminPage extends Component {
 }
 
 const UserList = ({ users }) => (
-    <table>
+    <table className="table">
         <thead>
             <tr>
                 <th>UID</th>
